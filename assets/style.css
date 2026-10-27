@@ -22,6 +22,7 @@
   --bata: #8e1010;
 
   --garis: #e0d3c4;
+  --garis-kuat: #cbb8a4;
 
   --r-sm: 4px;
   --r-md: 8px;
@@ -528,9 +529,14 @@ nav a[aria-current="true"] { color: var(--terakota); }
 
 /* filter state */
 .galeri figure[hidden] { display: none; }
+/* Keadaan kosong: dipakai bersama untuk galeri dan hasil saringan produk.
+   Ada border putus-putus supaya jelas ini pesan, bukan produk yang hilang. */
 .galeri-kosong {
   grid-column: 1 / -1; padding: 40px 0; text-align: center;
   color: var(--tinta-2); font-size: 0.95rem;
+  border: 1px dashed var(--garis-kuat); border-radius: var(--r-md);
+  background: var(--kertas-3);
+  max-width: 520px; margin-inline: auto; width: 100%;
 }
 
 /* =========================================================
@@ -597,6 +603,16 @@ nav a[aria-current="true"] { color: var(--terakota); }
 }
 .cta-box h3 { margin-bottom: 0.4em; }
 .cta-box p { color: var(--tinta-2); font-size: 0.97rem; }
+/* Nomor telepon ditulis sebagai teks, bukan hanya di dalam tautan, supaya
+   pengunjung bisa menyalinnya atau membacanya tanpa membuka WhatsApp. */
+.cta-nomor { margin: 14px 0 0; }
+.cta-nomor a {
+  display: inline-flex; align-items: center; min-height: 44px;
+  /* 1.25rem = 20px, melewati ambang large text WCAG (18.66px bold) */
+  font-family: var(--f-display); font-weight: 700; font-size: 1.25rem;
+  text-decoration: none;
+}
+.cta-nomor a:hover { text-decoration: underline; }
 @media (max-width: 760px) { .kontak-grid { grid-template-columns: 1fr; } }
 
 /* =========================================================

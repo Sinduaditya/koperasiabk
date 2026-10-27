@@ -86,8 +86,9 @@ terakota/kertas2 4.7, putih/terakota 5.7, putih/bata 9.4.
   Tahun 2021 (29 Desember 2021). Semua berasal dari `PROFILE KOPERASI ABK.pptx`.
 - Tidak ada testimoni rekaan. Tidak ada logo atau avatar rekaan; logo memakai file asli.
 - Nama produk diambil dari template asli dan foto yang memang ada.
-- Semua tautan WhatsApp memakai nomor placeholder `62XXXXXXXXXX` (sudah ada di template),
-  ditandai dengan komentar `TODO` di `index.html` supaya diganti pemilik koperasi.
+- Semua tautan WhatsApp memakai nomor resmi koperasi `6287771659955` (format internasional
+  dari 0877-7165-9955). Nomor juga ditulis sebagai teks di bagian kontak dan footer supaya
+  bisa dibaca dan disalin tanpa membuka WhatsApp.
 
 ## Dials
 ENERGY 2 / RHYTHM 2 / MOTION 2
